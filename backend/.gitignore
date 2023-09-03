@@ -18,6 +18,7 @@ next-env.d.ts
 .next
 .vercel
 .env*.local
+.env
 
 # Ignore built ts files
 dist/**/*

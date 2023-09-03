@@ -8,6 +8,7 @@
   },
   "scripts": {
     "compile": "tsc",
+    "dev": "nodemon --watch 'src/**/*.ts' --exec 'tsc && node dist/index.js'",
     "start": "npm run compile && node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,11 +18,14 @@
   "type": "module",
   "dependencies": {
     "@apollo/server": "^4.9.3",
+    "@prisma/client": "^5.2.0",
     "graphql": "^16.8.0",
     "next-auth": "^4.23.1"
   },
   "devDependencies": {
     "@types/node": "^20.5.7",
+    "nodemon": "^3.0.1",
+    "prisma": "^5.2.0",
     "typescript": "^5.2.2"
   }
 }
